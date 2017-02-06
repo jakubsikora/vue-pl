@@ -1,0 +1,11 @@
+a {
+  color: inherit;
+  font-style: inherit;
+  text-decoration: inherit;
+
+  &:hover {
+    color: inherit;
+    text-decoration: inherit;
+    cursor: pointer;
+  }
+}

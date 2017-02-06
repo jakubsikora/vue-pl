@@ -1,0 +1,29 @@
+@import '~normalize.css/normalize.css';
+@import './typography/vars';
+@import './colors/vars';
+@import './typography/link';
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: $font-family-body;
+  font-size: $font-size-body;
+  line-height: $line-height-body;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $color-light;
+  background-color: $color-dark;
+}
