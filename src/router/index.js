@@ -1,8 +1,11 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import Hello from '../components/Hello';
-import Grid from '../components/grid/Grid';
+import Components from '../views/Components';
+import Foundations from '../views/Foundations';
+
+import componentsRoutes from './components';
+import foundationsRoutes from './foundations';
 
 Vue.use(Router);
 
@@ -12,18 +15,19 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: Hello,
+      name: 'index',
     },
     {
       path: '/components',
       name: 'components',
-      component: Grid,
+      component: Components,
+      children: componentsRoutes,
     },
     {
-      path: '/components/grid',
-      name: 'grid',
-      component: Grid,
+      path: '/foundations',
+      name: 'foundations',
+      component: Foundations,
+      children: foundationsRoutes,
     },
   ],
 });
