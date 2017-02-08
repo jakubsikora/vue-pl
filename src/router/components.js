@@ -1,4 +1,4 @@
-import Grid from '../components/Grid';
+import Grid from '../views/Grid';
 
 export default [{
   name: 'grid',

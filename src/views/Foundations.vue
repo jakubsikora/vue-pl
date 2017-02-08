@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Foundations</h2>
+    <h1>Foundations</h1>
     <router-view></router-view>
   </div>
 </template>
