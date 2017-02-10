@@ -1,3 +1,5 @@
+[ ![Codeship Status for jakubsikora/vue-pl](https://app.codeship.com/projects/de160900-d12f-0134-9aed-0a5e60453cc0/status?branch=master)](https://app.codeship.com/projects/201447)
+
 # vue-pl
 
 > Vue pattern library
