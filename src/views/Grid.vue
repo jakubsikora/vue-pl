@@ -14,6 +14,8 @@
         </GridCell>
       </Grid>
 
+      <Syntax code='<Grid><GridCell><div class="sg-example__box-item">1/2</div></GridCell><GridCell><div class="sg-example__box-item">1/2</div></GridCell></Grid>'></Syntax>
+
       <Grid>
         <GridCell>
           <div class="sg-example__box-item">1/3</div>
@@ -62,11 +64,13 @@
 <script>
   import Grid from '../components/grid/Grid';
   import GridCell from '../components/grid/GridCell';
+  import Syntax from './Syntax';
 
   export default {
     components: {
       Grid,
       GridCell,
+      Syntax,
     },
   };
 </script>
