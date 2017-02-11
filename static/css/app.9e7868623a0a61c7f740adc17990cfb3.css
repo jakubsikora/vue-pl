@@ -512,10 +512,7 @@ body,
   -ms-flex: 1;
       flex: 1;
 }
-.sg-layout__body {
-  width: 60rem;
-}
-.sg-layout__content {
+.sg-layout__main {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -524,7 +521,32 @@ body,
   color: #73879C;
   -ms-flex: 1;
       flex: 1;
-  padding: 0.625rem 1.25rem 0;
+  padding: 1.5rem 0;
+}
+.sg-layout__header,
+.sg-layout__body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 48rem) {
+.sg-layout__header,
+  .sg-layout__body {
+    width: 33rem;
+}
+}
+@media (min-width: 62rem) {
+.sg-layout__header,
+  .sg-layout__body {
+    width: 47rem;
+}
+}
+.sg-example__box-item {
+  width: 100%;
+  background-color: #F2F5F7;
+  padding: .5rem;
+  text-align: center;
+  border: 1px solid #CCCCCC;
 }
 
 a {
@@ -649,72 +671,40 @@ body {
   color: #F2F5F7;
   background-color: #2A3F54;
 }
-.sg-example__box-item {
-  width: 100%;
-  background-color: #F2F5F7;
-  padding: .5rem;
-  text-align: center;
-  border: 1px solid #2A3F54;
-}
-
-a {
-  color: inherit;
-  font-style: inherit;
-  text-decoration: inherit;
-}
-a:hover {
-    color: inherit;
-    text-decoration: inherit;
-    cursor: pointer;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-html,
-body {
-  box-sizing: border-box;
-}
-html {
-  font-size: 100%;
-}
-body {
-  font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
-  font-size: 0.8125rem;
-  font-weight: 400;
-  line-height: 1.25rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #F2F5F7;
-  background-color: #2A3F54;
-}
 .pl-grid {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .pl-grid .pl-grid__cell {
     -ms-flex: 1 1 0%;
         flex: 1 1 0%;
 }
+.pl-grid .pl-grid__cell--percent {
+    -ms-flex: none;
+        flex: none;
+}
+.pl-grid__gutters {
+  margin: 1rem 0 -1rem -1rem;
+}
 .pl-grid__gutters > .pl-grid__cell {
-  padding: 1rem 0 0 1rem;
+    padding: 0 0 1rem 1rem;
 }
 .pl-grid__flex-cells > .pl-grid__cell {
   display: -ms-flexbox;
   display: flex;
 }
-
-
-
-
-
-
-
-
-
-
-
+.pl-grid__flex-full > .pl-grid__cell {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+}
+@media (min-width: 48rem) {
+.pl-grid__flex-fit > .pl-grid__cell {
+    -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+}
+}
 /**
  * prism.js default theme for JavaScript, CSS and HTML
  * Based on dabblet (http://dabblet.com)
@@ -876,4 +866,8 @@ pre[class*="language-"] {
 
 
 
-/*# sourceMappingURL=app.70b286964a0e7d681dc6e153f312d787.css.map*/
+
+
+
+
+/*# sourceMappingURL=app.9e7868623a0a61c7f740adc17990cfb3.css.map*/
