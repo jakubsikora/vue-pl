@@ -1,5 +1,7 @@
 <template>
-  <div>Colors content</div>
+  <div class="sg-layout__body">
+    <h2>Colors</h2>
+  </div>
 </template>
 
 <script>

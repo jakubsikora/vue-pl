@@ -1,7 +1,12 @@
 <template>
-  <div>
-    <h1>Foundations</h1>
-    <router-view></router-view>
+  <div class="sg-layout__main">
+    <div class="sg-layout__content">
+      <div class="sg-layout__header">
+        <h1>Foundations</h1>
+      </div>
+
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
