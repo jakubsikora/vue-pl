@@ -24,6 +24,9 @@
             <li class="sg-nav__list-item">
               <router-link :to="{ name: 'grid' }" class="sg-nav__link">Grid</router-link>
             </li>
+            <li class="sg-nav__list-item">
+              <router-link :to="{ name: 'foo' }" class="sg-nav__link">Foo</router-link>
+            </li>
           </ul>
         </li>
       </ul>

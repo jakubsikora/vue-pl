@@ -1,5 +1,5 @@
 <template>
-  <div class="sg-layout__body">
+  <div>
     <h2>Grid</h2>
 
     <div class="sg-example__box">
