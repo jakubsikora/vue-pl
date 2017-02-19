@@ -1,0 +1,11 @@
+.sg-example__box-item {
+  width: 100%;
+  background-color: $color-white;
+  padding: .5rem;
+  text-align: center;
+  border: 1px solid $color-light-2;
+}
+
+.sg-example__box-item--text {
+  background-color: $color-text;
+}

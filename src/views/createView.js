@@ -1,11 +1,11 @@
-import ComponentRoot from './ComponentRoot';
+import LayoutBody from './LayoutBody';
 
 export default function createView(ChildComponent) {
   return {
     components: {
       ChildComponent,
-      ComponentRoot,
+      LayoutBody,
     },
-    template: '<ComponentRoot><ChildComponent></ChildComponent></ComponentRoot>',
+    template: '<LayoutBody><ChildComponent></ChildComponent></LayoutBody>',
   };
 }

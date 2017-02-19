@@ -10,22 +10,16 @@
         <li class="sg-nav__list-item">
           <router-link :to="{ name: 'foundations' }" class="sg-nav__link">Foundations</router-link>
           <ul class="sg-nav__list">
-            <li class="sg-nav__list-item sg-nav__list-item--active">
-              <router-link :to="{ name: 'colors' }" class="sg-nav__link">Colors</router-link>
-            </li>
-            <li class="sg-nav__list-item">
-              <router-link :to="{ name: 'typography' }" class="sg-nav__link">Typography</router-link>
+            <li v-for="item in foundations" class="sg-nav__list-item">
+              <router-link :to="{ name: item.name }" class="sg-nav__link">{{ item.label }}</router-link>
             </li>
           </ul>
         </li>
         <li class="sg-nav__list-item">
           <router-link :to="{ name: 'components' }" class="sg-nav__link">Components</router-link>
           <ul class="sg-nav__list">
-            <li class="sg-nav__list-item">
-              <router-link :to="{ name: 'grid' }" class="sg-nav__link">Grid</router-link>
-            </li>
-            <li class="sg-nav__list-item">
-              <router-link :to="{ name: 'foo' }" class="sg-nav__link">Foo</router-link>
+            <li v-for="item in components" class="sg-nav__list-item">
+              <router-link :to="{ name: item.name }" class="sg-nav__link">{{ item.label }}</router-link>
             </li>
           </ul>
         </li>
@@ -36,14 +30,23 @@
 
 <script>
   export default {
+    props: ['foundations', 'components'],
   };
 </script>
 
 <style lang="scss">
-  @import '../components/base.scss';
+  @import '../assets/css/styleguide';
 
   .sg-layout__sidebar {
-    width: 15rem;
+    width: $sidebar-size;
+  }
+
+  @media (max-width: $medium-size) {
+    .sg-layout__sidebar {
+      transition: transform .2s;
+      transform: translateX(-100%);
+      position: absolute;
+    }
   }
 
   .sg-nav {
@@ -53,6 +56,7 @@
     padding: 0;
   }
 
+
   .sg-nav__title {
     display: flex;
     align-items: center;
@@ -61,9 +65,6 @@
     > img {
       margin: 0 0.625rem;
       width: 3rem;
-    }
-
-    > h3 {
     }
   }
 

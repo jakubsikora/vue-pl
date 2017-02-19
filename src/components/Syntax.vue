@@ -1,5 +1,5 @@
 <template>
-  <pre><code class="language-markup">{{ formattedCode }}</code></pre>
+  <pre class="sg-syntax"><code class="language-markup">{{ formattedCode }}</code></pre>
 </template>
 
 <script>
@@ -28,5 +28,11 @@
 </script>
 
 <style lang="scss">
+  @import '../assets/css/styleguide';
   @import '~prismjs/themes/prism.css';
+
+  pre.sg-syntax {
+    background-color: $color-white;
+    border: 1px solid $color-light-2;
+  }
 </style>

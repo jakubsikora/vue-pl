@@ -1,0 +1,38 @@
+.sg-layout {
+  display: flex;
+  flex: 1;
+}
+
+.sg-layout__main {
+  display: flex;
+  justify-content: center;
+  background: $color-light-0;
+  color: $color-dark-0;
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.sg-layout__header,
+.sg-layout__body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: $medium-size) {
+  .sg-layout__header,
+  .sg-layout__body {
+    width: ($medium-size - $sidebar-size);
+  }
+
+  .sg-layout__main {
+    padding: 1.5rem 0;
+  }
+}
+
+@media (min-width: $large-size) {
+  .sg-layout__header,
+  .sg-layout__body {
+    width: ($large-size - $sidebar-size);
+  }
+}

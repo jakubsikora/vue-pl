@@ -105,8 +105,8 @@
 </template>
 
 <script>
-  import { Grid, GridCell } from '../components/grid';
-  import Syntax from './Syntax';
+  import { Grid, GridCell } from '../pattern-library/components/grid';
+  import Syntax from '../components/Syntax';
 
   export default {
     components: {

@@ -1,5 +1,11 @@
 <template>
-  <div class="pl-grid" :class="{ 'pl-grid__gutters': gutters, 'pl-grid__flex-cells': flexCells, 'pl-grid__flex-full': flexFull, 'pl-grid__flex-fit': flexFit}">
+  <div class="pl-grid"
+       :class="{
+          'pl-grid__gutters': gutters,
+          'pl-grid__flex-cells': flexCells,
+          'pl-grid__flex-full': flexFull,
+          'pl-grid__flex-fit': flexFit
+        }">
     <slot></slot>
   </div>
 </template>
@@ -28,8 +34,6 @@
 </script>
 
 <style lang="scss">
-  @import '../../components/base.scss';
-
   .pl-grid {
     display: flex;
     flex-wrap: wrap;
