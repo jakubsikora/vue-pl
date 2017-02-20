@@ -8,4 +8,11 @@
 
 .sg-example__box-item--text {
   background-color: $color-text;
+  border: 1px solid darken($color-text, 10%);
+}
+
+.sg-example__box-item--bg {
+  background-color: $color-bg;
+  border: 1px solid lighten($color-bg, 10%);
+  color: $color-white;
 }
