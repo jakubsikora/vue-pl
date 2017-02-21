@@ -1,0 +1,24 @@
+@import 'normalize.css';
+@import 'variables';
+@import 'foundations/colors/variables';
+@import 'foundations/typography/variables';
+@import 'foundations/typography/link';
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  @apply --body-text;
+}

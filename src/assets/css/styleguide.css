@@ -1,3 +1,8 @@
+@import '../../pattern-library/base';
+@import 'variables';
+@import 'layout';
+@import 'example';
+
 :root {
   font-size: 16px;
 }

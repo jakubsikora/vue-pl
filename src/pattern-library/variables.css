@@ -1,0 +1,13 @@
+/** Breakpoints */
+
+@custom-media --medium-viewport (min-width: 48rem);
+@custom-media --large-viewport (min-width: 64rem);
+
+/** Sizes */
+:root {
+  // 768px
+  --medium-size: 48rem;
+
+  // 1024px
+  --large-size: 64rem;
+}

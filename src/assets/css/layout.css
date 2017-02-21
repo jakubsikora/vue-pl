@@ -6,8 +6,8 @@
 .sg-layout__main {
   display: flex;
   justify-content: center;
-  background: $color-light-0;
-  color: $color-dark-0;
+  background: var(--color-light-0);
+  color: var(--color-dark-0);
   flex: 1;
   padding: 1.5rem;
 }
@@ -19,10 +19,10 @@
   margin: 0 auto;
 }
 
-@media (min-width: $medium-size) {
+@media (--medium-viewport) {
   .sg-layout__header,
   .sg-layout__body {
-    width: ($medium-size - $sidebar-size);
+    width: calc(var(--medium-size) - var(--sidebar-size));
   }
 
   .sg-layout__main {
@@ -30,9 +30,9 @@
   }
 }
 
-@media (min-width: $large-size) {
+@media (--large-viewport) {
   .sg-layout__header,
   .sg-layout__body {
-    width: ($large-size - $sidebar-size);
+    width: calc(var(--large-size) - var(--sidebar-size));
   }
 }
