@@ -35,11 +35,14 @@
 </script>
 
 <style>
+  @import '../pattern-library/variables';
+  @import '../assets/css/variables';
+
   .sg-layout__sidebar {
     width: var(--sidebar-size);
   }
 
-  @media (--medium-viewport) {
+  @media (--small-viewport) {
     .sg-layout__sidebar {
       transition: transform .2s;
       transform: translateX(-100%);

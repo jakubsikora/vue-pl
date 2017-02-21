@@ -2,6 +2,7 @@
 
 @custom-media --medium-viewport (min-width: 48rem);
 @custom-media --large-viewport (min-width: 64rem);
+@custom-media --small-viewport (max-width: 48rem);
 
 /** Sizes */
 :root {
