@@ -28,11 +28,11 @@
 </script>
 
 <style lang="scss">
-  @import '../assets/css/styleguide';
-  @import '~prismjs/themes/prism.css';
+  // @import '../assets/css/styleguide';
+  // @import '~prismjs/themes/prism.css';
 
-  pre.sg-syntax {
-    background-color: $color-white;
-    border: 1px solid $color-light-2;
-  }
+  // pre.sg-syntax {
+  //   background-color: $color-white;
+  //   border: 1px solid $color-light-2;
+  // }
 </style>

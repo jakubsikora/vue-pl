@@ -33,7 +33,7 @@
   };
 </script>
 
-<style lang="scss">
+<style>
   .pl-grid {
     display: flex;
     flex-wrap: wrap;

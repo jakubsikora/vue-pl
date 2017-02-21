@@ -26,6 +26,6 @@
   };
 </script>
 
-<style lang="scss">
+<style>
   @import 'assets/css/styleguide';
 </style>
